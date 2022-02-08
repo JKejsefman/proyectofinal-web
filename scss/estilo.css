@@ -1,0 +1,230 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  color: navy;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: "header header header" "fotopanoramica fotopanoramica sidebar" "contenido contenido sidebar" "Recomendados Recomendados sidebar" "footer footer footer";
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.header {
+  background-color: navy;
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.viajemain h2 {
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.viajemain p {
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.viajemain img {
+  float: left;
+}
+
+.ViajerosMain img {
+  width: 100%;
+}
+
+.ViajerosMain {
+  background-color: blue;
+  padding: 2%;
+  margin: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  grid-row-gap: 1%;
+}
+
+.ViajerosMain div {
+  background-color: cornflowerblue;
+  border-color: red;
+  border-style: solid;
+  border-radius: 19px;
+}
+
+.ViajerosMain h3 {
+  font-family: cursive;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.ViajerosMain img {
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ViajerosMain img:hover {
+  opacity: 0.5;
+  border: white solid 1px;
+}
+
+/* ***recomendados**** */
+.Recomendados {
+  background-color: #313136;
+  padding: 2%;
+  margin: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  grid-row-gap: 1%;
+}
+
+.Recomendados img {
+  opacity: 1;
+  width: 100%;
+}
+
+.Recomendados img:hover {
+  opacity: 0.5;
+  border: white solid 1px;
+}
+
+.Recomendados div {
+  background-color: cornflowerblue;
+  border-color: red;
+  /*#8C0410;*/
+  border-style: solid;
+  border-radius: 19px;
+}
+
+.Recomendados p {
+  font-weight: normal;
+  text-align: center;
+}
+
+.alquilahome {
+  padding: 2%;
+  margin: 2%;
+}
+
+.alquilahome h2 {
+  text-align: center;
+  font-family: cursive;
+}
+
+.alquilahome h4 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.libertad {
+  padding: 2%;
+  margin: 2%;
+}
+
+.libertad h2 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+.libertad h4 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.libertad p {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: .9rem;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.libertad img {
+  float: right;
+}
+
+.Recomenda2 {
+  background-color: aliceblue;
+  padding: 2%;
+  margin: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  grid-row-gap: 1%;
+}
+
+.Recomenda2 img {
+  opacity: 1;
+  width: 100%;
+}
+
+.Recomenda2 img:hover {
+  opacity: 0.5;
+  border: white solid 1px;
+}
+
+.Recomenda2 div {
+  background-color: cornflowerblue;
+  border-color: red;
+  /*#8C0410;*/
+  border-style: solid;
+  border-radius: 19px;
+}
+
+.Recomenda2 p {
+  font-weight: normal;
+  text-align: center;
+}
+
+.footer {
+  background-color: navy;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  padding: 20px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=estilo.css.map */

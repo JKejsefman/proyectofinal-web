@@ -1,0 +1,114 @@
+main{
+    // index
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 80px;
+        max-width: 1200px;
+        .sub-titulo{
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 35px;
+            box-shadow: 0 0 20px 0 $cvi;
+            text-align: center;
+            padding: 20px;
+            &:hover{
+                transition: 1s;
+                cursor: pointer;
+                background: $cvf;
+                box-shadow:0 0 20px $cb;
+                font-weight: 700;
+            }
+        }
+        .card{
+            font-family: 'Alegreya Sans', sans-serif;
+            background: $cvf;
+            box-shadow: 0 8px 10px $cb;
+            cursor:pointer;
+            &:hover{
+                transition: 0.7s;
+                background: $cb ;
+                box-shadow: 0 8px 10px $cvi;
+            }
+        }
+        .proyecto__grid{
+            display: grid;
+            height: 550px;
+            grid-template-areas: 
+            "proyecto-1 proyecto-2 proyecto-3"
+            "proyecto-4 proyecto-5 proyecto-6"
+            "proyecto-7 proyecto-8 proyecto-9";
+            gap: 10px;
+            .proyecto__item{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                &:hover{
+                    transform: translate(0%);
+                } 
+                &:nth-of-type(1){
+                    grid-area: proyecto-1;
+                }
+                &:nth-of-type(2){
+                    grid-area: proyecto-2;
+                }
+                &:nth-of-type(3){
+                    grid-area: proyecto-3;
+                }
+                &:nth-of-type(4){
+                    grid-area: proyecto-4;
+                }
+                &:nth-of-type(5){
+                    grid-area: proyecto-5;
+                }
+                &:nth-of-type(6){
+                    grid-area: proyecto-6;
+                }
+                &:nth-of-type(7){
+                    grid-area: proyecto-7;
+                }
+                &:nth-of-type(8){
+                    grid-area: proyecto-8;
+                }
+                &:nth-of-type(9){
+                    grid-area: proyecto-9;
+                }
+                
+                .proyecto__img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+                .proyecto__hover{
+                    font-weight: 600;
+                    position: absolute;
+                    background: $cvf;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: $cac;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+        
+                cursor: pointer;
+                    transition: transform .7s ease-in-out;
+                    &:hover{    
+                        transform: translate(0%);
+                        transform: translate(100%);
+                        
+                    }
+                }
+                
+   
+            }
+           
+        
+       }
+    }
+}

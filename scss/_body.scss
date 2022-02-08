@@ -1,0 +1,71 @@
+$encabezados:(
+    ca:blue,
+    cal:aliceblue,
+    can: navy,
+    cac: cornflowerblue,
+    cr:red,
+    cv:green,
+    cn:black,
+    cbl: white,
+    cgo: rgb(49, 49, 54),
+    cvi:#790cd3,
+    cb: #c0003093,
+    cvf: #cc00ff6c,
+);
+
+$sombras-rojas: 0 0 20px #c0003093;
+$ca: map-get($encabezados, ca);
+$cal: map-get($encabezados, cal);
+$can: map-get($encabezados, can);
+$cac: map-get($encabezados, cac);
+$cr: map-get($encabezados, cr);
+$cv: map-get($encabezados, cv);
+$cn: map-get($encabezados, cn);
+$cbl: map-get($encabezados, cbl);
+$cgo: map-get($encabezados, cgo);
+$cvi: map-get($encabezados, cvi);
+$cb: map-get($encabezados, cb);
+$cvf: map-get($encabezados, cvf);
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: $cal;
+    color: $can;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "header header header"
+        "fotopanoramica fotopanoramica sidebar"
+        "contenido contenido sidebar"
+        "Recomendados Recomendados sidebar"
+        "footer footer footer"
+    ;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+@mixin caja-span ($color) {
+    background:$color;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: black;
+    margin-right: 5px;    
+}
